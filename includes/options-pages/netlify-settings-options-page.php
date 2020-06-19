@@ -17,12 +17,11 @@ function register_netlify_settings_options_pages() {
         'redirect'      => false,
         'autoload'      => true,
         'update_button' => __('Update', 'acf'),
-        'updated_message' => __("settings Updated", 'acf'),
+        'updated_message' => __("Settings Updated", 'acf'),
         'post_id' => 'netlify_settings',
         'show_in_graphql' => true,
     ));
 }
 
-    // Hook into acf initialization.
-    add_action('acf/init', 'register_netlify_settings_options_pages');
-endif;
+// Hook into acf initialization.
+add_action('acf/init', 'register_netlify_settings_options_pages');
