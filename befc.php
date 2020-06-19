@@ -57,7 +57,7 @@ class BEFC {
         include_once( BEFC_PATH . "includes/options-pages/book-options-page.php");
         include_once( BEFC_PATH . "includes/options-pages/event-options-page.php");
 		include_once( BEFC_PATH . "includes/options-pages/faq-options-page.php");
-		include_once( BEFC_PATH . "includes/options-pages/netlify-setings-options-page.php");
+		include_once( BEFC_PATH . "includes/options-pages/netlify-settings-options-page.php");
         include_once( BEFC_PATH . "includes/custom-fields/acf-book-definition.php");
         include_once( BEFC_PATH . "includes/custom-fields/acf-event-definition.php");
 		include_once( BEFC_PATH . "includes/custom-fields/acf-faq-definition.php");
