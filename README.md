@@ -1,6 +1,8 @@
 # Books, Events, and FAQ ACF Options Pages
 
-This plugin adds Books, Events, and FAQ Options pages to a Wordpress Site. This allows Editors and Administrators to enter Rich Context from the Admin UI and allows Developers to iterate over each set of data within themes, plugins, and pages. Additionally, the plugin comes with the ability to trigger a new build on Netlify for Staticly-Rendered Sites built of this data. 
+This plugin adds Books, Events, and FAQ Options pages to a Wordpress Site. The data structures were designed with Google Structured Data and Schema.org schema in mind: [Book](https://developers.google.com/search/docs/data-types/book), [Event](https://developers.google.com/search/docs/data-types/event), and [FAQ](https://developers.google.com/search/docs/data-types/faqpage). The plugin allows Editors and Administrators to enter Rich Context from the Admin UI and allows Developers to iterate over each set of data within themes, plugins, and pages, to create SEO-rich content. 
+
+Additionally, the plugin comes with the ability to trigger builds on Netlify for Staticly-Rendered Sites built using this data. 
 
 Currently, this plugin does not create Custom Post Types though that feature is in development. If these types are exported to a SSG, then a decision on which content is canonical must be made. This may require adding to the data model a `canonical` flag.
 
@@ -11,7 +13,7 @@ Currently, this plugin does not create Custom Post Types though that feature is 
 
 ### Recommended Optional Plugins
 
-The following plugins will expose your entire site to GraphQL, which can be viewed form the WP Admin or exported via SSG plugins such as `gatsby-source-graphql`
+The following plugins will expose your entire site to GraphQL, which can be viewed form the WP Admin or exported via SSG plugins such as `gatsby-source-graphql`. This gives you an easy, visual representation of existing data for continued development.
 
  - WP GraphiQL https://wpgraphql.com/
  - WP GraphQL https://github.com/wp-graphql/wp-graphql
