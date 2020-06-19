@@ -61,6 +61,7 @@ class BEFC {
         include_once( BEFC_PATH . "includes/custom-fields/acf-book-definition.php");
         include_once( BEFC_PATH . "includes/custom-fields/acf-event-definition.php");
 		include_once( BEFC_PATH . "includes/custom-fields/acf-faq-definition.php");
+		include_once( BEFC_PATH . "includes/custom-fields/acf-netlify-settings-definition.php");
 		
 		include_once( BEFC_PATH . "includes/webhooks/netlify.php");
     }
