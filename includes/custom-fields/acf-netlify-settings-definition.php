@@ -28,7 +28,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'options_page',
                     'operator' => '==',
-                    'value' => 'netlify_settings',
+                    'value' => 'netlify-settings',
                 ),
             ),
         ),
