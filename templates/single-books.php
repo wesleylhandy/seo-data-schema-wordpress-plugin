@@ -2,7 +2,6 @@
 /**
  * The Template for displaying all single Book posts.
  *
- * @package highwind
  */
 
 get_header(); ?>

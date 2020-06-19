@@ -1,4 +1,4 @@
-# Books, Events, and FAQ ACF Options Pages
+# SEO-friendly Data-Schema with Options Pages and Netlify Build Trigger
 
 This plugin adds Books, Events, and FAQ Options pages to a Wordpress Site. The data structures were designed with Google Structured Data and Schema.org schema in mind: [Book](https://developers.google.com/search/docs/data-types/book), [Event](https://developers.google.com/search/docs/data-types/event), and [FAQ](https://developers.google.com/search/docs/data-types/faqpage). The plugin allows Editors and Administrators to enter Rich Context from the Admin UI and allows Developers to iterate over each set of data within themes, plugins, and pages, to create SEO-rich content. 
 
