@@ -23,7 +23,7 @@ For Developers, after installing the required plugins, then activating this plug
 
 **Netlify Settings** allows you to store a custom Build Hook for this site. See [Netlify Docs](https://docs.netlify.com/configure-builds/build-hooks/) for more.
 
-This enables you to use [ACF functions](https://www.advancedcustomfields.com/resources/) like `have_rows`, `get_field`, and `get_sub_field` to access the data.
+The other options pages enable you to use [ACF functions](https://www.advancedcustomfields.com/resources/) like `have_rows`, `get_field`, and `get_sub_field` to access the data.
 
 For **Books**, as an example, you might iterate over the books list as follows:
 
