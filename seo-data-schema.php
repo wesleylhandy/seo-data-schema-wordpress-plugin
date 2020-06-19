@@ -2,7 +2,7 @@
 /*
 Plugin Name: SEO-friendly Data-Schema with Options Pages and Netlify Build Trigger
 Plugin URI: https://www.wesleylhandy.net
-Description: Add SEO-friendly Books, Events, and FAQ Data schema with Options Pages using Advanced Custom Fields Pro for connecting to Static Site Generators and triggering builds on Netlify
+Description: Worpress Plugin to add SEO-friendly Books, Events, and FAQ data-schema with Options Pages using Advanced Custom Fields Pro, and optimized for connecting via graphql to Static Site Generators and triggering builds on Netlify.
 Version: 1.1.0
 Author: Wesley L. Handy <wesley@wearecreativ.media>
 Author URI: https://www.wesleylhandy.net
