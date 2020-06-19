@@ -18,7 +18,8 @@ function register_faqs_options_pages() {
         'autoload'      => true,
         'update_button' => __('Update', 'acf'),
         'updated_message' => __("Faqs Updated", 'acf'),
-        'post_id' => 'faqs'
+        'post_id' => 'faqs',
+        'show_in_graphql' => true,
     ));
 }
 

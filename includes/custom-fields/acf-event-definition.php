@@ -249,8 +249,7 @@ if( function_exists('acf_add_local_field_group') ):
                                             'WV' => 'WV',
                                             'WY' => 'WY',
                                         ),
-                                        'default_value' => array(
-                                        ),
+                                        'default_value' => false,
                                         'allow_null' => 0,
                                         'multiple' => 0,
                                         'ui' => 0,
@@ -320,7 +319,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'events',
+                    'value' => 'post',
                 ),
             ),
         ),
@@ -332,6 +331,8 @@ if( function_exists('acf_add_local_field_group') ):
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'show_in_graphql' => 1,
+        'graphql_field_name' => 'events',
     ));
     
     endif;

@@ -1,15 +1,27 @@
 # Books, Events, and FAQ ACF Options Pages
 
-This plugin adds Books, Events, and FAQ Options pages to a Wordpress Site. This allows Editors and Administrators to enter Rich Context from the Admin UI and allows Developers to iterate over each set of data within themes, plugins, and pages. Currently, this plugin does not create Custom Post Types though that feature is in development.
+This plugin adds Books, Events, and FAQ Options pages to a Wordpress Site. This allows Editors and Administrators to enter Rich Context from the Admin UI and allows Developers to iterate over each set of data within themes, plugins, and pages. Additionally, the plugin comes with the ability to trigger a new build on Netlify for Staticly-Rendered Sites built of this data. 
+
+Currently, this plugin does not create Custom Post Types though that feature is in development. If these types are exported to a SSG, then a decision on which content is canonical must be made. This may require adding to the data model a `canonical` flag.
 
 ## Required Plugins
 
  - ACF https://www.advancedcustomfields.com/
  - ACF Pro https://www.advancedcustomfields.com/pro/
 
+### Recommended Optional Plugin
+
+The following plugins will expose your entire site to GraphQL, which can be viewed form the WP Admin or exported via SSG plugins such as `gatsby-source-graphql`
+
+ - WP GraphiQL https://wpgraphql.com/
+ - WP GraphQL https://github.com/wp-graphql/wp-graphql
+ - WPGraphQL for Advanced Custom Fields https://wpgraphql.com/acf
+
 ## Usage
 
-For Developers, after installing the required plugins, then activating this plugin, three options pages will be added near the top of the Admin Menu: [Books](/wp-admin/admin.php?page=faqs-settings), [Events](/wp-admin/admin.php?page=events-settings), and [FAQs](https://grizzlyunicorn.local/wp-admin/admin.php?page=faqs-settings)
+For Developers, after installing the required plugins, then activating this plugin, four options pages will be added near the top of the Admin Menu: [Netlify Settings](/wp-admin/admin.php?page=netlify-settings), [Books](/wp-admin/admin.php?page=faqs-settings), [Events](/wp-admin/admin.php?page=events-settings), and [FAQs](https://grizzlyunicorn.local/wp-admin/admin.php?page=faqs-settings)
+
+**Netlify Settings** allows you to store a custom Build Hook for this site. See [Netlify Docs](https://docs.netlify.com/configure-builds/build-hooks/) for more.
 
 This enables you to use [ACF functions](https://www.advancedcustomfields.com/resources/) like `have_rows`, `get_field`, and `get_sub_field` to access the data.
 

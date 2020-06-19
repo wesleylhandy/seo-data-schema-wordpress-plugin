@@ -478,7 +478,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'books',
+                    'value' => 'post',
                 ),
             ),
         ),
@@ -490,6 +490,8 @@ if( function_exists('acf_add_local_field_group') ):
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
+        'show_in_graphql' => 1,
+        'graphql_field_name' => 'books',
     ));
     
     endif;

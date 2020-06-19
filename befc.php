@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Books, Events, and FAQ ACF Options Pages
+Plugin Name: Books, Events, and FAQ ACF Options Pages with Netlify Build Trigger
 Plugin URI: https://www.wesleylhandy.net
-Description: Add Books, Events, and FAQ Options Pages using Advanced Custom Fields Pro
-Version: 0.0.3
+Description: Add Books, Events, and FAQ Options Pages using Advanced Custom Fields Pro for connecting to Static Site Generator and triggering build on Netlify
+Version: 1.0.0
 Author: Wesley L. Handy <wesley@wearecreativ.media>
 Author URI: https://www.wesleylhandy.net
 Text Domain: books_events_faq
@@ -16,7 +16,7 @@ if ( ! class_exists('BEFC') ):
 
 class BEFC {
     /** @var string The plugin version number. */
-    var $version = '0.0.3';
+    var $version = '1.0.0';
     
     /**
 	 * __construct
@@ -56,10 +56,13 @@ class BEFC {
         // include_once( BEFC_PATH . "includes/post-types/faq-post-type.php");
         include_once( BEFC_PATH . "includes/options-pages/book-options-page.php");
         include_once( BEFC_PATH . "includes/options-pages/event-options-page.php");
-        include_once( BEFC_PATH . "includes/options-pages/faq-options-page.php");
+		include_once( BEFC_PATH . "includes/options-pages/faq-options-page.php");
+		include_once( BEFC_PATH . "includes/options-pages/netlify-setings-options-page.php");
         include_once( BEFC_PATH . "includes/custom-fields/acf-book-definition.php");
         include_once( BEFC_PATH . "includes/custom-fields/acf-event-definition.php");
-        include_once( BEFC_PATH . "includes/custom-fields/acf-faq-definition.php");
+		include_once( BEFC_PATH . "includes/custom-fields/acf-faq-definition.php");
+		
+		include_once( BEFC_PATH . "includes/webhooks/netlify.php");
     }
 
     /**

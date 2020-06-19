@@ -18,7 +18,8 @@ function register_events_options_pages() {
         'autoload'      => true,
         'update_button' => __('Update', 'acf'),
         'updated_message' => __("Events Updated", 'acf'),
-        'post_id' => 'events'
+        'post_id' => 'events',
+        'show_in_graphql' => true,
     ));
 }
 

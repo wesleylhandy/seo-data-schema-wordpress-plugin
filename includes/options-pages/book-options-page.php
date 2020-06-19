@@ -18,7 +18,8 @@ function register_book_options_pages() {
         'autoload'      => true,
         'update_button' => __('Update', 'acf'),
         'updated_message' => __("Books Updated", 'acf'),
-        'post_id' => 'books'
+        'post_id' => 'books',
+        'show_in_graphql' => true,
     ));
 }
 
