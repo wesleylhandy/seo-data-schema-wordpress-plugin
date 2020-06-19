@@ -4,7 +4,7 @@ This plugin adds Books, Events, and FAQ Options pages to a Wordpress Site. The d
 
 Additionally, the plugin comes with the ability to trigger builds on Netlify for Staticly-Rendered Sites built using this data. 
 
-Currently, this plugin does not create Custom Post Types though that feature is in development. If these types are exported to a SSG, then a decision on which content is canonical must be made. This may require adding to the data model a `canonical` flag.
+Currently, this plugin does not create Custom Post Types though that feature is under consideration. If these types are exported to a SSG, then a decision on which content is canonical must be made.
 
 ## Required Plugins
 
@@ -23,7 +23,7 @@ The following plugins will expose your entire site to GraphQL, which can be view
 
 For Developers, after installing the required plugins, then activating this plugin, four options pages will be added near the top of the Admin Menu: **Netlify Settings**, **Books**, **Events**, and **FAQs**
 
-**Netlify Settings** allows you to store a custom Build Hook for this site. See [Netlify Docs](https://docs.netlify.com/configure-builds/build-hooks/) for more.
+**Netlify Settings** allows you to store a custom Build Hook for this site. See [Netlify Docs](https://docs.netlify.com/configure-builds/build-hooks/) for more. This field is currently being exluded from `GraphQL` for security purposes.
 
 The other options pages enable you to use [ACF functions](https://www.advancedcustomfields.com/resources/) like `have_rows`, `get_field`, and `get_sub_field` to access the data.
 
@@ -61,8 +61,9 @@ endif;
 
 ## TO DO:
 
-- Add Settings to Allow choice of Options Pages or Custom Post Types
+- Add Settings to allow choice between options pages or custom post types.
 - Complete the development of Custom Post Type Templates
+- Add Support For More Structured Data types referenced by Google: https://developers.google.com/search/reference/overview
 - Fill out the complete examples within this README
 
 ## Contributing

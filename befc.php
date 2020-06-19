@@ -3,7 +3,7 @@
 Plugin Name: Books, Events, and FAQ ACF Options Pages with Netlify Build Trigger
 Plugin URI: https://www.wesleylhandy.net
 Description: Add Books, Events, and FAQ Options Pages using Advanced Custom Fields Pro for connecting to Static Site Generator and triggering build on Netlify
-Version: 1.0.0
+Version: 1.0.1
 Author: Wesley L. Handy <wesley@wearecreativ.media>
 Author URI: https://www.wesleylhandy.net
 Text Domain: books_events_faq
@@ -16,7 +16,7 @@ if ( ! class_exists('BEFC') ):
 
 class BEFC {
     /** @var string The plugin version number. */
-    var $version = '1.0.0';
+    var $version = '1.0.1';
     
     /**
 	 * __construct
