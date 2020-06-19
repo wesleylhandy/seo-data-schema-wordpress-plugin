@@ -9,7 +9,7 @@ Currently, this plugin does not create Custom Post Types though that feature is 
  - ACF https://www.advancedcustomfields.com/
  - ACF Pro https://www.advancedcustomfields.com/pro/
 
-### Recommended Optional Plugin
+### Recommended Optional Plugins
 
 The following plugins will expose your entire site to GraphQL, which can be viewed form the WP Admin or exported via SSG plugins such as `gatsby-source-graphql`
 
@@ -19,13 +19,13 @@ The following plugins will expose your entire site to GraphQL, which can be view
 
 ## Usage
 
-For Developers, after installing the required plugins, then activating this plugin, four options pages will be added near the top of the Admin Menu: [Netlify Settings](/wp-admin/admin.php?page=netlify-settings), [Books](/wp-admin/admin.php?page=faqs-settings), [Events](/wp-admin/admin.php?page=events-settings), and [FAQs](https://grizzlyunicorn.local/wp-admin/admin.php?page=faqs-settings)
+For Developers, after installing the required plugins, then activating this plugin, four options pages will be added near the top of the Admin Menu: **Netlify Settings**, **Books**, **Events**, and **FAQs**
 
 **Netlify Settings** allows you to store a custom Build Hook for this site. See [Netlify Docs](https://docs.netlify.com/configure-builds/build-hooks/) for more.
 
 This enables you to use [ACF functions](https://www.advancedcustomfields.com/resources/) like `have_rows`, `get_field`, and `get_sub_field` to access the data.
 
-For `Books`, as an example, you might iterate over the books list as follows:
+For **Books**, as an example, you might iterate over the books list as follows:
 
 ```php
 if ( have_rows( 'book', 'books' ) ):
