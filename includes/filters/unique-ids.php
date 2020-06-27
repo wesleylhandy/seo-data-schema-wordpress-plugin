@@ -1,14 +1,14 @@
 <?php
 if( !function_exists('add_uniqid_on_save') ):
 
-    function load_uniq_id_as_read_only( $field ){
+    function load_id_as_read_only( $field ){
         $field['default_value'] = uniqidReal();
         $field['disabled'] = 1;
         $field['readonly'] = 1;
         return $field;
     }
 
-    add_filter('acf/load_field/name=uniq_id', 'load_uniq_id_as_read_only');
+    add_filter('acf/load_field/name=id', 'load_id_as_read_only');
 
 
     function uniqidReal($length = 13) {
@@ -31,6 +31,6 @@ if( !function_exists('add_uniqid_on_save') ):
     }
 
 
-    add_filter('acf/update_value/name=uniq_id', 'add_uniqid_on_save', 10, 3);
+    add_filter('acf/update_value/name=id', 'add_uniqid_on_save', 10, 3);
 
 endif;

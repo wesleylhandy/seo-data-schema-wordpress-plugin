@@ -11,6 +11,6 @@ if( !function_exists('validate_slug_on_defined_object') ):
         return $valid;
     }
 
-    add_filter('acf/validate_value/name=custom_slug', 'validate_slug_on_defined_object', 10, 4);
+    add_filter('acf/validate_value/name=slug', 'validate_slug_on_defined_object', 10, 4);
 
 endif;

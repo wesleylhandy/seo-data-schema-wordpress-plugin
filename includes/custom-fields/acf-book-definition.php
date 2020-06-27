@@ -8,7 +8,7 @@ if( function_exists('acf_add_local_field_group') ):
             array(
                 'key' => 'field_5ee7c6ba4f360',
                 'label' => 'Book',
-                'name' => 'book',
+                'name' => 'books',
                 'type' => 'repeater',
                 'instructions' => 'Add or Remove Books that should be displayed on the book page',
                 'required' => 0,
@@ -18,6 +18,7 @@ if( function_exists('acf_add_local_field_group') ):
                     'class' => '',
                     'id' => '',
                 ),
+                'show_in_graphql' => 1,
                 'collapsed' => 'field_5ee7c6f54f361',
                 'min' => 0,
                 'max' => 0,
@@ -26,8 +27,8 @@ if( function_exists('acf_add_local_field_group') ):
                 'sub_fields' => array(
                     array(
                         'key' => 'field_5ef68b3b9b3a8',
-                        'label' => 'id',
-                        'name' => 'uniq_id',
+                        'label' => 'ID',
+                        'name' => 'id',
                         'type' => 'text',
                         'instructions' => 'Read Only !! The unique identifier of this book object',
                         'required' => 0,
@@ -506,7 +507,7 @@ if( function_exists('acf_add_local_field_group') ):
                     array(
                         'key' => 'field_5ef68f799b3a9',
                         'label' => 'slug',
-                        'name' => 'custom_slug',
+                        'name' => 'slug',
                         'type' => 'text',
                         'instructions' => 'The endpoint for book on the author\'s website. For example, if the book title is "In His Image", a good slug would be "in-his-image". Please only use lowercase letters, numbers, dashes, and (if you must) underscores.',
                         'required' => 1,

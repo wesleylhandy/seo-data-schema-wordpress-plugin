@@ -26,8 +26,8 @@ if( function_exists('acf_add_local_field_group') ):
                 'sub_fields' => array(
                     array(
                         'key' => 'field_5ef693915c157',
-                        'label' => 'id',
-                        'name' => 'uniq_id',
+                        'label' => 'ID',
+                        'name' => 'id',
                         'type' => 'text',
                         'instructions' => 'READ ONLY unique identifier for the event in the DB',
                         'required' => 0,
@@ -346,8 +346,8 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     array(
                         'key' => 'field_5ef693b95c158',
-                        'label' => 'slug',
-                        'name' => 'custom_slug',
+                        'label' => 'Slug',
+                        'name' => 'slug',
                         'type' => 'text',
                         'instructions' => 'The endpoint for the event to be displayed on the author\'s website.',
                         'required' => 1,

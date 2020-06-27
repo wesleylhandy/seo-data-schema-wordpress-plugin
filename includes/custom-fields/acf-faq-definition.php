@@ -26,8 +26,8 @@ if( function_exists('acf_add_local_field_group') ):
 				'sub_fields' => array(
 					array(
 						'key' => 'field_5ef6943d30cbd',
-						'label' => 'id',
-						'name' => 'uniq_id',
+						'label' => 'ID',
+						'name' => 'id',
 						'type' => 'text',
 						'instructions' => 'READ ONLY',
 						'required' => 0,
@@ -38,7 +38,7 @@ if( function_exists('acf_add_local_field_group') ):
 							'id' => '',
 						),
 						'show_in_graphql' => 1,
-						'default_value' => '',
+						'default_value' => '1ddd02db229a3',
 						'placeholder' => '',
 						'prepend' => '',
 						'append' => '',
@@ -105,7 +105,7 @@ if( function_exists('acf_add_local_field_group') ):
 					array(
 						'key' => 'field_5ef6945430cbe',
 						'label' => 'Slug',
-						'name' => 'custom_slug',
+						'name' => 'slug',
 						'type' => 'text',
 						'instructions' => 'The endpoint for the event on the author\'s site',
 						'required' => 1,
