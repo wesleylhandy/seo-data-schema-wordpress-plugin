@@ -23,6 +23,26 @@
                 "button_label": "Add Book",
                 "sub_fields": [
                     {
+                        "key": "field_5ef68b3b9b3a8",
+                        "label": "id",
+                        "name": "uniq_id",
+                        "type": "text",
+                        "instructions": "Read Only !! The unique identifier of this book object",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
                         "key": "field_5ee7c6f54f361",
                         "label": "Book Title",
                         "name": "book_title",
@@ -480,6 +500,26 @@
                         "ui": 0,
                         "ui_on_text": "",
                         "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5ef68f799b3a9",
+                        "label": "slug",
+                        "name": "custom_slug",
+                        "type": "text",
+                        "instructions": "The endpoint for book on the author's website. For example, if the book title is \"In His Image\", a good slug would be \"in-his-image\". Please only use lowercase letters, numbers, dashes, and (if you must) underscores.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
                     }
                 ]
             }
@@ -534,6 +574,26 @@
                 "layout": "block",
                 "button_label": "Add Event",
                 "sub_fields": [
+                    {
+                        "key": "field_5ef693915c157",
+                        "label": "id",
+                        "name": "uniq_id",
+                        "type": "text",
+                        "instructions": "READ ONLY unique identifier for the event in the DB",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
                     {
                         "key": "field_5ee7cfd218793",
                         "label": "Event Name",
@@ -833,6 +893,26 @@
                         "ui": 0,
                         "ui_on_text": "",
                         "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5ef693b95c158",
+                        "label": "slug",
+                        "name": "custom_slug",
+                        "type": "text",
+                        "instructions": "The endpoint for the event to be displayed on the author's website.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
                     }
                 ]
             }
@@ -887,6 +967,26 @@
                 "layout": "block",
                 "button_label": "Add Questions",
                 "sub_fields": [
+                    {
+                        "key": "field_5ef6943d30cbd",
+                        "label": "id",
+                        "name": "uniq_id",
+                        "type": "text",
+                        "instructions": "READ ONLY",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
                     {
                         "key": "field_5ee7cefd0a506",
                         "label": "Question",
@@ -944,6 +1044,26 @@
                         "ui": 0,
                         "ui_on_text": "",
                         "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5ef6945430cbe",
+                        "label": "Slug",
+                        "name": "custom_slug",
+                        "type": "text",
+                        "instructions": "The endpoint for the event on the author's site",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
                     }
                 ]
             }
