@@ -37,7 +37,7 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "b9810cd2bf4fe",
+                        "default_value": "0a9c6f4cbd18c",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
@@ -273,8 +273,9 @@
                             "class": "",
                             "id": ""
                         },
+                        "show_in_graphql": 1,
                         "display_format": "F j, Y",
-                        "return_format": "U",
+                        "return_format": "c",
                         "first_day": 0
                     },
                     {
@@ -631,7 +632,7 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "16026fc46faf7",
+                        "default_value": "f04009b589b24",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
@@ -714,8 +715,9 @@
                             "class": "",
                             "id": ""
                         },
+                        "show_in_graphql": 1,
                         "display_format": "F j, Y g:i a",
-                        "return_format": "U",
+                        "return_format": "c",
                         "first_day": 0
                     },
                     {
@@ -731,8 +733,9 @@
                             "class": "",
                             "id": ""
                         },
+                        "show_in_graphql": 1,
                         "display_format": "F j, Y g:i a",
-                        "return_format": "U",
+                        "return_format": "c",
                         "first_day": 0
                     },
                     {
@@ -1203,7 +1206,7 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "73058a18be056",
+                        "default_value": "d77bc401b3b1e",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",

@@ -2,7 +2,6 @@
 if( !function_exists('add_uniqid_on_save') ):
 
     function load_id_as_read_only( $field ){
-        $field['default_value'] = uniqidReal();
         $field['disabled'] = 1;
         $field['readonly'] = 1;
         return $field;
