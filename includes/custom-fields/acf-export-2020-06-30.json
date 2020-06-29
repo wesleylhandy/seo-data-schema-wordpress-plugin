@@ -37,11 +37,13 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "",
+                        "default_value": "b9810cd2bf4fe",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": ""
+                        "maxlength": "",
+                        "disabled": 1,
+                        "readonly": 1
                     },
                     {
                         "key": "field_5ee7c6f54f361",
@@ -259,81 +261,6 @@
                         "delay": 0
                     },
                     {
-                        "key": "field_5ee7c9ab4f36c",
-                        "label": "ISBN",
-                        "name": "isbn",
-                        "type": "text",
-                        "instructions": "The ISBN of the publication",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "maxlength": ""
-                    },
-                    {
-                        "key": "field_5ee7cdb24f377",
-                        "label": "Edition",
-                        "name": "edition",
-                        "type": "text",
-                        "instructions": "The edition of the work, if any.",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "maxlength": ""
-                    },
-                    {
-                        "key": "field_5ee7c9cd4f36d",
-                        "label": "Product Urls",
-                        "name": "product_urls",
-                        "type": "repeater",
-                        "instructions": "Include URLs of online locations where the book can be purchased",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "collapsed": "field_5ee7cacb4f36e",
-                        "min": 0,
-                        "max": 0,
-                        "layout": "block",
-                        "button_label": "Add Url",
-                        "sub_fields": [
-                            {
-                                "key": "field_5ee7cacb4f36e",
-                                "label": "product_url",
-                                "name": "product_url",
-                                "type": "url",
-                                "instructions": "Be sure to include any tracking parameters that the online retailer provides for attributing the source of the link to your site.",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "default_value": "",
-                                "placeholder": ""
-                            }
-                        ]
-                    },
-                    {
                         "key": "field_5ee7c95c4f36b",
                         "label": "Date Available for Purchase",
                         "name": "date_available_for_purchase",
@@ -349,6 +276,116 @@
                         "display_format": "F j, Y",
                         "return_format": "U",
                         "first_day": 0
+                    },
+                    {
+                        "key": "field_5ef8bbff5ad5c",
+                        "label": "Online Availability",
+                        "name": "pricepoints",
+                        "type": "repeater",
+                        "instructions": "A list of the prices of the book for each format, edition, and entrypoint.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add Pricepoint",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ef8bdf55ad5f",
+                                "label": "Format",
+                                "name": "format",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "choices": {
+                                    "EBook": "EBook",
+                                    "Hardcover": "Hardcover",
+                                    "Paperback": "Paperback",
+                                    "AudioBook": "AudioBook"
+                                },
+                                "default_value": false,
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5ee7c9ab4f36c",
+                                "label": "ISBN",
+                                "name": "isbn",
+                                "type": "text",
+                                "instructions": "The ISBN of the publication",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5ee7cdb24f377",
+                                "label": "Edition",
+                                "name": "edition",
+                                "type": "text",
+                                "instructions": "The edition of the work, if any.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5ef8bcf05ad5e",
+                                "label": "Price",
+                                "name": "price",
+                                "type": "number",
+                                "instructions": "The price associated with this format of the book",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "0.00",
+                                "placeholder": "",
+                                "prepend": "$",
+                                "append": "",
+                                "min": "0.00",
+                                "max": "",
+                                "step": "0.01"
+                            }
+                        ]
                     },
                     {
                         "key": "field_5ee7cb4a4f370",
@@ -486,7 +523,7 @@
                         "key": "field_5eed0c30a8813",
                         "label": "Is Canonical",
                         "name": "is_canonical",
-                        "type": "true_false",
+                        "type": "radio",
                         "instructions": "Only Check This Box if you intend the content on the Wordpress site to be the canonical version. Otherwise, if this content is being exported to another site, the external site will be considered canonical.",
                         "required": 0,
                         "conditional_logic": 0,
@@ -496,11 +533,16 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "message": "",
-                        "default_value": 0,
-                        "ui": 0,
-                        "ui_on_text": "",
-                        "ui_off_text": ""
+                        "choices": {
+                            "true": "True",
+                            "false": "False"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "false",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
                     },
                     {
                         "key": "field_5ef68f799b3a9",
@@ -589,11 +631,13 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "",
+                        "default_value": "16026fc46faf7",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": ""
+                        "maxlength": "",
+                        "disabled": 1,
+                        "readonly": 1
                     },
                     {
                         "key": "field_5ee7cfd218793",
@@ -634,6 +678,30 @@
                         "delay": 0
                     },
                     {
+                        "key": "field_5ee7d1fd1879c",
+                        "label": "Featured Image",
+                        "name": "featured_image",
+                        "type": "image",
+                        "instructions": "The primary associated with the event",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
                         "key": "field_5ee7d2441879d",
                         "label": "Start Date\/Time",
                         "name": "start_datetime",
@@ -668,18 +736,46 @@
                         "first_day": 0
                     },
                     {
-                        "key": "field_5ee7d04318795",
-                        "label": "Event Location",
-                        "name": "event_location",
-                        "type": "group",
-                        "instructions": "",
-                        "required": 0,
+                        "key": "field_5ef9f75e295fc",
+                        "label": "Event Type",
+                        "name": "event_type",
+                        "type": "select",
+                        "instructions": "Toggle between regular events, online events, and mixed online\/offline events",
+                        "required": 1,
                         "conditional_logic": 0,
                         "wrapper": {
                             "width": "",
                             "class": "",
                             "id": ""
                         },
+                        "show_in_graphql": 1,
+                        "choices": {
+                            "standard": "Standard",
+                            "online": "Online",
+                            "mixed": "Offline\/Online Mixed"
+                        },
+                        "default_value": "standard",
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5ee7d04318795",
+                        "label": "Event Location",
+                        "name": "event_location",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
                         "layout": "block",
                         "sub_fields": [
                             {
@@ -689,12 +785,21 @@
                                 "type": "text",
                                 "instructions": "The name of the Venue",
                                 "required": 0,
-                                "conditional_logic": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5ef9f75e295fc",
+                                            "operator": "!=",
+                                            "value": "online"
+                                        }
+                                    ]
+                                ],
                                 "wrapper": {
                                     "width": "",
                                     "class": "",
                                     "id": ""
                                 },
+                                "show_in_graphql": 1,
                                 "default_value": "",
                                 "placeholder": "",
                                 "prepend": "",
@@ -708,12 +813,21 @@
                                 "type": "group",
                                 "instructions": "",
                                 "required": 0,
-                                "conditional_logic": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5ef9f75e295fc",
+                                            "operator": "!=",
+                                            "value": "online"
+                                        }
+                                    ]
+                                ],
                                 "wrapper": {
                                     "width": "",
                                     "class": "",
                                     "id": ""
                                 },
+                                "show_in_graphql": 1,
                                 "layout": "block",
                                 "sub_fields": [
                                     {
@@ -848,15 +962,40 @@
                                         "maxlength": ""
                                     }
                                 ]
+                            },
+                            {
+                                "key": "field_5ef9f7ee295fd",
+                                "label": "url",
+                                "name": "url",
+                                "type": "url",
+                                "instructions": "For use with Online or Mixed Event Types",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5ef9f75e295fc",
+                                            "operator": "!=",
+                                            "value": "standard"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "",
+                                "placeholder": ""
                             }
                         ]
                     },
                     {
-                        "key": "field_5ee7d1fd1879c",
-                        "label": "Featured Image",
-                        "name": "featured_image",
-                        "type": "image",
-                        "instructions": "The primary associated with the event",
+                        "key": "field_5ef9f864295fe",
+                        "label": "Event Admission",
+                        "name": "event_admission",
+                        "type": "repeater",
+                        "instructions": "Only use this field if there will be tickets required for the event. If there are tickets required, but they are free, add a ticket price, but set the price to zero.",
                         "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
@@ -864,16 +1003,98 @@
                             "class": "",
                             "id": ""
                         },
-                        "return_format": "array",
-                        "preview_size": "medium",
-                        "library": "all",
-                        "min_width": "",
-                        "min_height": "",
-                        "min_size": "",
-                        "max_width": "",
-                        "max_height": "",
-                        "max_size": "",
-                        "mime_types": ""
+                        "show_in_graphql": 1,
+                        "collapsed": "field_5ef9f8f5295ff",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add Ticket Price",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ef9f8f5295ff",
+                                "label": "Admission Price",
+                                "name": "admission_price",
+                                "type": "number",
+                                "instructions": "The price for admission. Enter 0 for free tickets.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": 0,
+                                "placeholder": "",
+                                "prepend": "$",
+                                "append": "",
+                                "min": 0,
+                                "max": "",
+                                "step": "0.01"
+                            },
+                            {
+                                "key": "field_5ef9f94d29600",
+                                "label": "Ticket Purchase Url",
+                                "name": "ticket_purchase_url",
+                                "type": "url",
+                                "instructions": "Where tickets can be purchased for this event.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5ef9f98329601",
+                                "label": "Ticket Availability",
+                                "name": "ticket_availability",
+                                "type": "select",
+                                "instructions": "Toggle this as necessary",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "choices": {
+                                    "InStock": "In Stock",
+                                    "SoldOut": "Sold Out",
+                                    "PreOrder": "Pre-Order"
+                                },
+                                "default_value": "InStock",
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5ef9fa0e29602",
+                                "label": "On Sale Date",
+                                "name": "on_sale_date",
+                                "type": "date_time_picker",
+                                "instructions": "The Date and Time from which this pricepoint is available.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "display_format": "F j, Y g:i a",
+                                "return_format": "U",
+                                "first_day": 0
+                            }
+                        ]
                     },
                     {
                         "key": "field_5eed0cbe36815",
@@ -982,11 +1203,13 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "",
+                        "default_value": "73058a18be056",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": ""
+                        "maxlength": "",
+                        "disabled": 1,
+                        "readonly": 1
                     },
                     {
                         "key": "field_5ee7cefd0a506",
