@@ -37,13 +37,11 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "0a9c6f4cbd18c",
+                        "default_value": "aeee6554f4872",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": "",
-                        "disabled": 1,
-                        "readonly": 1
+                        "maxlength": ""
                     },
                     {
                         "key": "field_5ee7c6f54f361",
@@ -632,13 +630,11 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "f04009b589b24",
+                        "default_value": "814219e6771d5",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": "",
-                        "disabled": 1,
-                        "readonly": 1
+                        "maxlength": ""
                     },
                     {
                         "key": "field_5ee7cfd218793",
@@ -672,10 +668,11 @@
                             "class": "",
                             "id": ""
                         },
+                        "show_in_graphql": 1,
                         "default_value": "",
                         "tabs": "all",
                         "toolbar": "full",
-                        "media_upload": 0,
+                        "media_upload": 1,
                         "delay": 0
                     },
                     {
@@ -1147,7 +1144,7 @@
                 {
                     "param": "options_page",
                     "operator": "==",
-                    "value": "events-settings"
+                    "value": ""
                 }
             ],
             [
@@ -1206,13 +1203,11 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "d77bc401b3b1e",
+                        "default_value": "1ddd02db229a3",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": "",
-                        "disabled": 1,
-                        "readonly": 1
+                        "maxlength": ""
                     },
                     {
                         "key": "field_5ee7cefd0a506",

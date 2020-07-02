@@ -38,13 +38,11 @@ if( function_exists('acf_add_local_field_group') ):
                             'id' => '',
                         ),
                         'show_in_graphql' => 1,
-                        'default_value' => 'a217217731d89',
+                        'default_value' => '814219e6771d5',
                         'placeholder' => '',
                         'prepend' => '',
                         'append' => '',
                         'maxlength' => '',
-                        'disabled' => 1,
-                        'readonly' => 1,
                     ),
                     array(
                         'key' => 'field_5ee7cfd218793',
@@ -78,10 +76,11 @@ if( function_exists('acf_add_local_field_group') ):
                             'class' => '',
                             'id' => '',
                         ),
+                        'show_in_graphql' => 1,
                         'default_value' => '',
                         'tabs' => 'all',
                         'toolbar' => 'full',
-                        'media_upload' => 0,
+                        'media_upload' => 1,
                         'delay' => 0,
                     ),
                     array(
@@ -553,7 +552,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'options_page',
                     'operator' => '==',
-                    'value' => 'events-settings',
+                    'value' => '',
                 ),
             ),
             array(
