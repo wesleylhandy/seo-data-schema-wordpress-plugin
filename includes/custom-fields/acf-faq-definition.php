@@ -43,6 +43,8 @@ if( function_exists('acf_add_local_field_group') ):
 						'prepend' => '',
 						'append' => '',
 						'maxlength' => '',
+						'disabled' => 1,
+						'readonly' => 1,
 					),
 					array(
 						'key' => 'field_5ee7cefd0a506',
@@ -131,13 +133,6 @@ if( function_exists('acf_add_local_field_group') ):
 					'param' => 'options_page',
 					'operator' => '==',
 					'value' => 'faqs-settings',
-				),
-			),
-			array(
-				array(
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'post',
 				),
 			),
 		),

@@ -41,7 +41,9 @@
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": ""
+                        "maxlength": "",
+                        "disabled": 1,
+                        "readonly": 1
                     },
                     {
                         "key": "field_5ee7c6f54f361",
@@ -252,10 +254,11 @@
                             "class": "",
                             "id": ""
                         },
+                        "show_in_graphql": 1,
                         "default_value": "",
                         "tabs": "all",
                         "toolbar": "basic",
-                        "media_upload": 0,
+                        "media_upload": 1,
                         "delay": 0
                     },
                     {
@@ -573,13 +576,6 @@
                     "operator": "==",
                     "value": "books-settings"
                 }
-            ],
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "post"
-                }
             ]
         ],
         "menu_order": 0,
@@ -634,7 +630,9 @@
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": ""
+                        "maxlength": "",
+                        "disabled": 1,
+                        "readonly": 1
                     },
                     {
                         "key": "field_5ee7cfd218793",
@@ -1144,14 +1142,7 @@
                 {
                     "param": "options_page",
                     "operator": "==",
-                    "value": ""
-                }
-            ],
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "post"
+                    "value": "events-settings"
                 }
             ]
         ],
@@ -1207,7 +1198,9 @@
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "maxlength": ""
+                        "maxlength": "",
+                        "disabled": 1,
+                        "readonly": 1
                     },
                     {
                         "key": "field_5ee7cefd0a506",
@@ -1296,13 +1289,6 @@
                     "param": "options_page",
                     "operator": "==",
                     "value": "faqs-settings"
-                }
-            ],
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "post"
                 }
             ]
         ],

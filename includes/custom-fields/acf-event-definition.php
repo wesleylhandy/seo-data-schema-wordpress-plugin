@@ -43,6 +43,8 @@ if( function_exists('acf_add_local_field_group') ):
                         'prepend' => '',
                         'append' => '',
                         'maxlength' => '',
+                        'disabled' => 1,
+                        'readonly' => 1,
                     ),
                     array(
                         'key' => 'field_5ee7cfd218793',
@@ -552,14 +554,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'options_page',
                     'operator' => '==',
-                    'value' => '',
-                ),
-            ),
-            array(
-                array(
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'post',
+                    'value' => 'events-settings',
                 ),
             ),
         ),
