@@ -38,7 +38,7 @@ if( function_exists('acf_add_local_field_group') ):
                             'id' => '',
                         ),
                         'show_in_graphql' => 1,
-                        'default_value' => '814219e6771d5',
+                        'default_value' => '',
                         'placeholder' => '',
                         'prepend' => '',
                         'append' => '',

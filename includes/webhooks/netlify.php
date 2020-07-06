@@ -10,7 +10,11 @@ if ( ! function_exists( 'call_build_hook_on_save' ) ) :
 
         $netlify_hook_url = get_field('netlify_hook_url', 'netlify_settings') ?: '';
         if ( !empty( $netlify_hook_url ) ) :
-            $response = Requests::post( $netlify_hook_url );
+            try {
+                $response = Requests::post( $netlify_hook_url );
+            } catch ( Exception $err) {
+                error_log( $err );
+            }
         endif;
     }
 

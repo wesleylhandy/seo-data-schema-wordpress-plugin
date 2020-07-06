@@ -37,7 +37,7 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "aeee6554f4872",
+                        "default_value": "",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
@@ -240,6 +240,31 @@
                         "max_height": "",
                         "max_size": "",
                         "mime_types": ""
+                    },
+                    {
+                        "key": "field_5f033e9ebd784",
+                        "label": "Social Sharing Image",
+                        "name": "social_sharing_image",
+                        "type": "image",
+                        "instructions": "An image marketing this book on social media whenever a link to the book on your site is shared.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": 1200,
+                        "min_height": 627,
+                        "min_size": "",
+                        "max_width": 1200,
+                        "max_height": 630,
+                        "max_size": 1,
+                        "mime_types": "png,jpg,webp"
                     },
                     {
                         "key": "field_5ee7cb174f36f",
@@ -626,7 +651,7 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "814219e6771d5",
+                        "default_value": "",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
@@ -1194,7 +1219,7 @@
                             "id": ""
                         },
                         "show_in_graphql": 1,
-                        "default_value": "1ddd02db229a3",
+                        "default_value": "",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
