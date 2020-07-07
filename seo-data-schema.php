@@ -10,7 +10,10 @@ Text Domain: seo_data_schema
 License: MIT
 */
 
-if( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+// if this file is called directly, abort!!
+if (! function_exists( 'add_action') ) {
+    die('Three blind mice, three blind mice...see how they run!');
+}
 
 if ( ! class_exists('Seo_data_schema') ):
 
