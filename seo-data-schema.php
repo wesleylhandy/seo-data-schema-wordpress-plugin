@@ -2,7 +2,7 @@
 /*
 Plugin Name: SEO-friendly Data-Schema with Options Pages
 Description: Worpress Plugin to add SEO-friendly Books, Events, and FAQ data-schema with Options Pages using Advanced Custom Fields Pro, and optimized for connecting via graphql to Static Site Generators.
-Version: 1.3.0
+Version: 1.3.1
 Author: Wesley L. Handy <wesley@wearecreativ.media>
 Author URI: https://www.wesleylhandy.net
 Text Domain: seo_data_schema
@@ -18,7 +18,7 @@ if ( ! class_exists('Seo_data_schema') ):
 
 class Seo_data_schema {
     /** @var string The plugin version number. */
-    var $version = '1.3.0';
+    var $version = '1.3.1';
     
     /**
 	 * __construct

@@ -100,7 +100,7 @@
                                 "sub_fields": [
                                     {
                                         "key": "field_5ee7c7704f364",
-                                        "label": "Name",
+                                        "label": "Name as it appears on your book",
                                         "name": "name",
                                         "type": "text",
                                         "instructions": "Include the full name of the author as published with the book. Only include Titles (Dr., Mrs, etc) and Suffices (Jr, PhD, EdD, etc) if part of the publication.",
@@ -111,6 +111,47 @@
                                             "class": "",
                                             "id": ""
                                         },
+                                        "show_in_graphql": 1,
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5f08fc5e62423",
+                                        "label": "Given Name",
+                                        "name": "given_name",
+                                        "type": "text",
+                                        "instructions": "First Name, for purposes of SEO",
+                                        "required": 1,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "show_in_graphql": 1,
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5f08fca162424",
+                                        "label": "Family Name",
+                                        "name": "family_name",
+                                        "type": "text",
+                                        "instructions": "Family Name, for purposes of SEO",
+                                        "required": 1,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "show_in_graphql": 1,
                                         "default_value": "",
                                         "placeholder": "",
                                         "prepend": "",
@@ -386,6 +427,23 @@
                                 "min": "0.00",
                                 "max": "",
                                 "step": "0.01"
+                            },
+                            {
+                                "key": "field_5f08fa9c2bdba",
+                                "label": "Url",
+                                "name": "url",
+                                "type": "url",
+                                "instructions": "The url where this edition and price can be purchased. If you need to include tracking codes to get credit toward your account with the online vendor, please do not exclude them.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "",
+                                "placeholder": ""
                             }
                         ]
                     },
