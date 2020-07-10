@@ -1,8 +1,6 @@
-# SEO-friendly Data-Schema with Options Pages and Netlify Build Trigger
+# SEO-friendly Data-Schema with Options Pages
 
 This plugin adds Books, Events, and FAQ Options pages to a Wordpress Site. The data structures were designed with Google Structured Data and Schema.org schema in mind: [Book](https://developers.google.com/search/docs/data-types/book), [Event](https://developers.google.com/search/docs/data-types/event), and [FAQ](https://developers.google.com/search/docs/data-types/faqpage). The plugin allows Editors and Administrators to enter Rich Context from the Admin UI and allows Developers to iterate over each set of data within themes, plugins, and pages, to create SEO-rich content. 
-
-Additionally, the plugin comes with the ability to trigger builds on Netlify for Staticly-Rendered Sites built using this data. 
 
 Currently, this plugin does not create Custom Post Types though that feature is under consideration. If these types are exported to a SSG, then a decision on which content is canonical must be made.
 
@@ -21,11 +19,9 @@ The following plugins will expose your entire site to GraphQL, which can be view
 
 ## Usage
 
-For Developers, after installing the required plugins, then activating this plugin, four options pages will be added near the top of the Admin Menu: **Netlify Settings**, **Books**, **Events**, and **FAQs**
+For Developers, after installing the required plugins, then activating this plugin, three options pages will be added near the top of the Admin Menu: **Books**, **Events**, and **FAQs**
 
-**Netlify Settings** allows you to store a custom Build Hook for this site. See [Netlify Docs](https://docs.netlify.com/configure-builds/build-hooks/) for more. This field is currently being exluded from `GraphQL` for security purposes.
-
-The other options pages enable you to use [ACF functions](https://www.advancedcustomfields.com/resources/) like `have_rows`, `get_field`, and `get_sub_field` to access the data.
+These pages enable you to use [ACF functions](https://www.advancedcustomfields.com/resources/) like `have_rows`, `get_field`, and `get_sub_field` to access the data.
 
 For **Books**, as an example, you might iterate over the books list as follows:
 

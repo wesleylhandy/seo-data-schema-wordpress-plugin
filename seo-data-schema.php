@@ -1,9 +1,8 @@
 <?php
 /*
-Plugin Name: SEO-friendly Data-Schema with Options Pages and Netlify Build Trigger
-Plugin URI: https://www.wesleylhandy.net
-Description: Worpress Plugin to add SEO-friendly Books, Events, and FAQ data-schema with Options Pages using Advanced Custom Fields Pro, and optimized for connecting via graphql to Static Site Generators and triggering builds on Netlify.
-Version: 1.2.10
+Plugin Name: SEO-friendly Data-Schema with Options Pages
+Description: Worpress Plugin to add SEO-friendly Books, Events, and FAQ data-schema with Options Pages using Advanced Custom Fields Pro, and optimized for connecting via graphql to Static Site Generators.
+Version: 1.3.0
 Author: Wesley L. Handy <wesley@wearecreativ.media>
 Author URI: https://www.wesleylhandy.net
 Text Domain: seo_data_schema
@@ -19,7 +18,7 @@ if ( ! class_exists('Seo_data_schema') ):
 
 class Seo_data_schema {
     /** @var string The plugin version number. */
-    var $version = '1.2.10';
+    var $version = '1.3.0';
     
     /**
 	 * __construct
@@ -60,15 +59,15 @@ class Seo_data_schema {
         include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/book-options-page.php");
         include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/event-options-page.php");
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/faq-options-page.php");
-		include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/netlify-settings-options-page.php");
+		// include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/netlify-settings-options-page.php");
         include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-book-definition.php");
         include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-event-definition.php");
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-faq-definition.php");
-		include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-netlify-settings-definition.php");
+		// include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-netlify-settings-definition.php");
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/filters/unique-ids.php");
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/filters/validate-slugs.php");
 		
-		include_once( SEO_DATA_SCHEMA_PATH . "includes/webhooks/netlify.php");
+		// include_once( SEO_DATA_SCHEMA_PATH . "includes/webhooks/netlify.php");
     }
 
     /**
