@@ -2,7 +2,7 @@
 /*
 Plugin Name: SEO-friendly Data-Schema with Options Pages
 Description: Worpress Plugin to add SEO-friendly Books, Events, and FAQ data-schema with Options Pages using Advanced Custom Fields Pro, and optimized for connecting via graphql to Static Site Generators.
-Version: 1.4.0
+Version: 1.4.1
 Author: Wesley L. Handy <wesley@wearecreativ.media>
 Author URI: https://www.wesleylhandy.net
 Text Domain: seo_data_schema
@@ -18,7 +18,7 @@ if ( ! class_exists('Seo_data_schema') ):
 
 class Seo_data_schema {
     /** @var string The plugin version number. */
-    var $version = '1.4.0';
+    var $version = '1.4.1';
     
     /**
 	 * __construct
@@ -116,10 +116,10 @@ function seo_data_schema() {
 function activate_seo_data_schema() {
 	if( ! function_exists('acf_add_local_field_group') ):
 		deactivate_plugins( plugin_basename( __FILE__) );
-		wp_die( __( 'Warning: Please install Advanced Custom Fields and Advanced Custom Fields Pro', 'seo_data_schema' ), 'Plugin dependency check' ) );
+		wp_die( __( 'Warning: Please install Advanced Custom Fields and Advanced Custom Fields Pro', 'seo_data_schema' ), 'Plugin dependency check' );
 	elseif ( ! class_exists('acf_pro') ):
 		deactivate_plugins( plugin_basename( __FILE__) );
-		wp_die( __( 'Warning: Please install Advanced Custom Fields Pro', 'seo_data_schema' ), 'Plugin dependency check' ) );
+		wp_die( __( 'Warning: Please install Advanced Custom Fields Pro', 'seo_data_schema' ), 'Plugin dependency check' );
 	endif;
 
 	seo_data_schema();
