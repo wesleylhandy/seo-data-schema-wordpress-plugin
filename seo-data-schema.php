@@ -2,7 +2,7 @@
 /*
 Plugin Name: SEO-friendly Data-Schema with Options Pages
 Description: Worpress Plugin to add SEO-friendly Books, Events, and FAQ data-schema with Options Pages using Advanced Custom Fields Pro, and optimized for connecting via graphql to Static Site Generators.
-Version: 1.3.1
+Version: 1.4.0
 Author: Wesley L. Handy <wesley@wearecreativ.media>
 Author URI: https://www.wesleylhandy.net
 Text Domain: seo_data_schema
@@ -18,7 +18,7 @@ if ( ! class_exists('Seo_data_schema') ):
 
 class Seo_data_schema {
     /** @var string The plugin version number. */
-    var $version = '1.3.1';
+    var $version = '1.4.0';
     
     /**
 	 * __construct
@@ -59,15 +59,15 @@ class Seo_data_schema {
         include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/book-options-page.php");
         include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/event-options-page.php");
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/faq-options-page.php");
-		// include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/netlify-settings-options-page.php");
+		include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/netlify-settings-options-page.php");
         include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-book-definition.php");
         include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-event-definition.php");
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-faq-definition.php");
-		// include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-netlify-settings-definition.php");
+		include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-netlify-settings-definition.php");
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/filters/unique-ids.php");
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/filters/validate-slugs.php");
 		
-		// include_once( SEO_DATA_SCHEMA_PATH . "includes/webhooks/netlify.php");
+		include_once( SEO_DATA_SCHEMA_PATH . "includes/webhooks/netlify.php");
     }
 
     /**
@@ -106,37 +106,26 @@ class Seo_data_schema {
 function seo_data_schema() {
     global $seo_data_schema;
 
-    add_action( 'admin_init', 'seo_data_schema_plugin_has_parents' );
-    function seo_data_schema_plugin_has_parents() {
-        $can_init =  is_admin() && current_user_can( 'activate_plugins') && is_plugin_active( 'advanced-custom-fields/acf.php') && is_plugin_active( 'advanced-custom-fields-pro/acf.php' );
-        if ( !$can_init ) {
-
-            add_action( 'admin_notices', 'seo_data_schema_plugin_notice' );
-            function seo_data_schema_plugin_notice() {
-                if( ! function_exists('acf_add_local_field_group') ):
-                  echo '<div class="error"><p>' . __( 'Warning: The theme needs Advanced Custom Fields and Advanced Custom Fields Pro plugins to function', 'fia-petitions' ) . '</p></div>';
-                endif;
-                if ( ! class_exists('acf_pro') ):
-                  echo '<div class="error"><p>' . __( 'Warning: The theme needs Advanced Custom Fields Pro plugin to function', 'fia-petitions' ) . '</p></div>';
-                endif;
-            }
-
-            deactivate_plugins( plugin_basename( __FILE__) );
-            if ( isset( $_GET['activate'] ) ) {
-                unset( $_GET['activate'] );
-            }
-        } 
-    }
-
     if( !isset($seo_data_schema) ) {
         $seo_data_schema = new Seo_data_schema();
         $seo_data_schema->initialize();
     }
     return $seo_data_schema;
+}
 
+function activate_seo_data_schema() {
+	if( ! function_exists('acf_add_local_field_group') ):
+		deactivate_plugins( plugin_basename( __FILE__) );
+		wp_die( __( 'Warning: Please install Advanced Custom Fields and Advanced Custom Fields Pro', 'seo_data_schema' ), 'Plugin dependency check' ) );
+	elseif ( ! class_exists('acf_pro') ):
+		deactivate_plugins( plugin_basename( __FILE__) );
+		wp_die( __( 'Warning: Please install Advanced Custom Fields Pro', 'seo_data_schema' ), 'Plugin dependency check' ) );
+	endif;
+
+	seo_data_schema();
 }
 
 // Instantiate.
-seo_data_schema();
+register_activation_hook(__FILE__, 'activate_seo_data_schema');
 
 endif; // class_exists check
