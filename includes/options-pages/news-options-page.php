@@ -9,7 +9,7 @@ function register_news_options_pages() {
     // register options page.
     $option_page = acf_add_options_page( array(
         'page_title'    => __( 'In The News' ),
-        'menu_title'    => __( 'news' ),
+        'menu_title'    => __( 'News Mentions' ),
         'menu_slug'     => 'news-mentions',
         'capability'    => 'edit_posts',
         'position'      => '4.9',

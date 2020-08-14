@@ -1,0 +1,1640 @@
+[
+    {
+        "key": "group_5ee7c62d4c8e2",
+        "title": "Books",
+        "fields": [
+            {
+                "key": "field_5ee7c6ba4f360",
+                "label": "Book",
+                "name": "books",
+                "type": "repeater",
+                "instructions": "Add or Remove Books that should be displayed on the book page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "show_in_graphql": 1,
+                "collapsed": "field_5ee7c6f54f361",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Book",
+                "sub_fields": [
+                    {
+                        "key": "field_5ef68b3b9b3a8",
+                        "label": "ID",
+                        "name": "id",
+                        "type": "text",
+                        "instructions": "Read Only !! The unique identifier of this book object",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "disabled": 1,
+                        "readonly": 1
+                    },
+                    {
+                        "key": "field_5ee7c6f54f361",
+                        "label": "Book Title",
+                        "name": "book_title",
+                        "type": "wysiwyg",
+                        "instructions": "The Official Published Title of the book, including Subtitle, if provided.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "basic",
+                        "media_upload": 0,
+                        "delay": 0
+                    },
+                    {
+                        "key": "field_5ee7c72a4f362",
+                        "label": "Authors",
+                        "name": "authors",
+                        "type": "repeater",
+                        "instructions": "Include at least one author for the publication. Co-authors should be added after the primary author",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_5ee7c75d4f363",
+                        "min": 1,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add Author",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ee7c75d4f363",
+                                "label": "Author",
+                                "name": "author",
+                                "type": "group",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5ee7c7704f364",
+                                        "label": "Name as it appears on your book",
+                                        "name": "name",
+                                        "type": "text",
+                                        "instructions": "Include the full name of the author as published with the book. Only include Titles (Dr., Mrs, etc) and Suffices (Jr, PhD, EdD, etc) if part of the publication.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "show_in_graphql": 1,
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5f08fc5e62423",
+                                        "label": "Given Name",
+                                        "name": "given_name",
+                                        "type": "text",
+                                        "instructions": "First Name, for purposes of SEO",
+                                        "required": 1,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "show_in_graphql": 1,
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5f08fca162424",
+                                        "label": "Family Name",
+                                        "name": "family_name",
+                                        "type": "text",
+                                        "instructions": "Family Name, for purposes of SEO",
+                                        "required": 1,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "show_in_graphql": 1,
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5ee7c7e04f365",
+                                        "label": "Url",
+                                        "name": "url",
+                                        "type": "url",
+                                        "instructions": "Not required. But include a url relevant to this author, such as a portfolio, blog, or other professional link",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": ""
+                                    },
+                                    {
+                                        "key": "field_5ee7c82b4f366",
+                                        "label": "Email",
+                                        "name": "email",
+                                        "type": "email",
+                                        "instructions": "Not Required. The email address for this author as it pertains to this publication.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": ""
+                                    },
+                                    {
+                                        "key": "field_5ee7c8614f367",
+                                        "label": "Short Bio",
+                                        "name": "short_bio",
+                                        "type": "wysiwyg",
+                                        "instructions": "A short bio for this author as it pertains to this publication.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "tabs": "all",
+                                        "toolbar": "full",
+                                        "media_upload": 1,
+                                        "delay": 0
+                                    },
+                                    {
+                                        "key": "field_5ee7c87b4f368",
+                                        "label": "Profile Image",
+                                        "name": "profile_image",
+                                        "type": "image",
+                                        "instructions": "An Image for this author as it pertains to this publication.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "array",
+                                        "preview_size": "medium",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": "jpg,png,webp"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5ee7c9034f36a",
+                        "label": "Publisher",
+                        "name": "publisher",
+                        "type": "text",
+                        "instructions": "The name and address of the publishing company as to be listed within the publishers page of the book. For example: Zondervan, Grand Rapids, MI",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5ee7c8e94f369",
+                        "label": "Cover Image",
+                        "name": "cover_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5ee7cb174f36f",
+                        "label": "Excerpt",
+                        "name": "excerpt",
+                        "type": "wysiwyg",
+                        "instructions": "Separate snippets with a new line if necessary.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "basic",
+                        "media_upload": 1,
+                        "delay": 0
+                    },
+                    {
+                        "key": "field_5f36b21557e90",
+                        "label": "Synopsis",
+                        "name": "synopsis",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0
+                    },
+                    {
+                        "key": "field_5f36b24657e91",
+                        "label": "Preview Snippet",
+                        "name": "preview_snippet",
+                        "type": "wysiwyg",
+                        "instructions": "For Embedding Book Preview Snippets, like those provided by Amazon",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "basic",
+                        "media_upload": 0,
+                        "delay": 0
+                    },
+                    {
+                        "key": "field_5ee7c95c4f36b",
+                        "label": "Date Available for Purchase",
+                        "name": "date_available_for_purchase",
+                        "type": "date_picker",
+                        "instructions": "The date the book can be purchased online or in stores.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "display_format": "F j, Y",
+                        "return_format": "c",
+                        "first_day": 0
+                    },
+                    {
+                        "key": "field_5ef8bbff5ad5c",
+                        "label": "Online Availability",
+                        "name": "pricepoints",
+                        "type": "repeater",
+                        "instructions": "A list of the prices of the book for each format, edition, and entrypoint.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add Pricepoint",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ef8bdf55ad5f",
+                                "label": "Format",
+                                "name": "format",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "choices": {
+                                    "EBook": "EBook",
+                                    "Hardcover": "Hardcover",
+                                    "Paperback": "Paperback",
+                                    "AudioBook": "AudioBook"
+                                },
+                                "default_value": false,
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5ee7c9ab4f36c",
+                                "label": "ISBN",
+                                "name": "isbn",
+                                "type": "text",
+                                "instructions": "The ISBN of the publication",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5ee7cdb24f377",
+                                "label": "Edition",
+                                "name": "edition",
+                                "type": "text",
+                                "instructions": "The edition of the work, if any.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5ef8bcf05ad5e",
+                                "label": "Price",
+                                "name": "price",
+                                "type": "number",
+                                "instructions": "The price associated with this format of the book",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "0.00",
+                                "placeholder": "",
+                                "prepend": "$",
+                                "append": "",
+                                "min": "0.00",
+                                "max": "",
+                                "step": "0.01"
+                            },
+                            {
+                                "key": "field_5f08fa9c2bdba",
+                                "label": "Url",
+                                "name": "url",
+                                "type": "url",
+                                "instructions": "The url where this edition and price can be purchased. If you need to include tracking codes to get credit toward your account with the online vendor, please do not exclude them.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5ee7cb4a4f370",
+                        "label": "Endorsements & Reviews",
+                        "name": "endorsements",
+                        "type": "repeater",
+                        "instructions": "For displaying endorsements for this publication",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_5ee7cb834f371",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add Endorsement",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ee7cb834f371",
+                                "label": "Endorsement\/Review",
+                                "name": "endorsement",
+                                "type": "group",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5ee7cbad4f372",
+                                        "label": "Endorsement Text",
+                                        "name": "endorsement_text",
+                                        "type": "wysiwyg",
+                                        "instructions": "The snippet of the endorsement or review",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "tabs": "all",
+                                        "toolbar": "full",
+                                        "media_upload": 0,
+                                        "delay": 0
+                                    },
+                                    {
+                                        "key": "field_5ee7ccc84f373",
+                                        "label": "Rating",
+                                        "name": "rating",
+                                        "type": "number",
+                                        "instructions": "The rating associated with the endorsement or review",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": 5,
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "min": 1,
+                                        "max": 5,
+                                        "step": 1
+                                    },
+                                    {
+                                        "key": "field_5ee7ccec4f374",
+                                        "label": "Reviewer Name",
+                                        "name": "reviewer_name",
+                                        "type": "text",
+                                        "instructions": "The full name and title of the person leaving the review",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5ee7cd474f375",
+                                        "label": "Reviewer Organization",
+                                        "name": "reviewer_organization",
+                                        "type": "text",
+                                        "instructions": "The full name of the organization, if any, where the endorsement was printed or that the reviewer represents.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5ee7cd794f376",
+                                        "label": "Review URL",
+                                        "name": "review_url",
+                                        "type": "url",
+                                        "instructions": "Either the URL where the full review can be read, or the url of the organization associated with the review above.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5eed0c30a8813",
+                        "label": "Is Canonical",
+                        "name": "is_canonical",
+                        "type": "radio",
+                        "instructions": "Only Check This Box if you intend the content on the Wordpress site to be the canonical version. Otherwise, if this content is being exported to another site, the external site will be considered canonical.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "choices": {
+                            "true": "True",
+                            "false": "False"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "false",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_5f0350572593b",
+                        "label": "SEO",
+                        "name": "seo",
+                        "type": "group",
+                        "instructions": "SEO related information for books. This will be what shows up when someone shares a link to the book on your site",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5eed0c30a8813",
+                                    "operator": "!=",
+                                    "value": "true"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5f0350982593c",
+                                "label": "SEO Title",
+                                "name": "seo_title",
+                                "type": "text",
+                                "instructions": "https:\/\/moz.com\/learn\/seo\/title-tag",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 60
+                            },
+                            {
+                                "key": "field_5f0350ac2593d",
+                                "label": "SEO Description",
+                                "name": "seo_description",
+                                "type": "text",
+                                "instructions": "https:\/\/moz.com\/learn\/seo\/meta-description",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 160
+                            },
+                            {
+                                "key": "field_5f033e9ebd784",
+                                "label": "Social Sharing Image",
+                                "name": "social_sharing_image",
+                                "type": "image",
+                                "instructions": "An image marketing this book on social media whenever a link to the book on your site is shared.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "return_format": "array",
+                                "preview_size": "medium",
+                                "library": "all",
+                                "min_width": 1200,
+                                "min_height": 627,
+                                "min_size": "",
+                                "max_width": 1200,
+                                "max_height": 630,
+                                "max_size": 1,
+                                "mime_types": "png,jpg,webp"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5ef68f799b3a9",
+                        "label": "slug",
+                        "name": "slug",
+                        "type": "text",
+                        "instructions": "The endpoint for book on the author's website. For example, if the book title is \"In His Image\", a good slug would be \"in-his-image\". Please only use lowercase letters, numbers, dashes, and (if you must) underscores.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "books-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_graphql": 1,
+        "graphql_field_name": "books"
+    },
+    {
+        "key": "group_5ee7cf9b0db50",
+        "title": "Events",
+        "fields": [
+            {
+                "key": "field_5ee7cfa118792",
+                "label": "Events & Speaking Engagments",
+                "name": "events",
+                "type": "repeater",
+                "instructions": "For adding speaking events, conferences, book signings, and other public appearances",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5ee7cfd218793",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Event",
+                "sub_fields": [
+                    {
+                        "key": "field_5ef693915c157",
+                        "label": "ID",
+                        "name": "id",
+                        "type": "text",
+                        "instructions": "READ ONLY unique identifier for the event in the DB",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "disabled": 1,
+                        "readonly": 1
+                    },
+                    {
+                        "key": "field_5ee7cfd218793",
+                        "label": "Event Name",
+                        "name": "event_name",
+                        "type": "text",
+                        "instructions": "The name of the event",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5ee7d00118794",
+                        "label": "Event Description",
+                        "name": "event_description",
+                        "type": "wysiwyg",
+                        "instructions": "A description of the overall event highlighting your particular role.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0
+                    },
+                    {
+                        "key": "field_5ee7d1fd1879c",
+                        "label": "Featured Image",
+                        "name": "featured_image",
+                        "type": "image",
+                        "instructions": "The primary associated with the event",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5ee7d2441879d",
+                        "label": "Start Date\/Time",
+                        "name": "start_datetime",
+                        "type": "date_time_picker",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "display_format": "F j, Y g:i a",
+                        "return_format": "c",
+                        "first_day": 0
+                    },
+                    {
+                        "key": "field_5ee7d26e1879e",
+                        "label": "End Date\/Time",
+                        "name": "end_datetime",
+                        "type": "date_time_picker",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "display_format": "F j, Y g:i a",
+                        "return_format": "c",
+                        "first_day": 0
+                    },
+                    {
+                        "key": "field_5ef9f75e295fc",
+                        "label": "Event Type",
+                        "name": "event_type",
+                        "type": "select",
+                        "instructions": "Toggle between regular events, online events, and mixed online\/offline events",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "choices": {
+                            "standard": "Standard",
+                            "online": "Online",
+                            "mixed": "Offline\/Online Mixed"
+                        },
+                        "default_value": "standard",
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5ee7d04318795",
+                        "label": "Event Location",
+                        "name": "event_location",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ee7d09018796",
+                                "label": "Venue Name",
+                                "name": "venue",
+                                "type": "text",
+                                "instructions": "The name of the Venue",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5ef9f75e295fc",
+                                            "operator": "!=",
+                                            "value": "online"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5ee7d0b218797",
+                                "label": "Venue Address",
+                                "name": "address",
+                                "type": "group",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5ef9f75e295fc",
+                                            "operator": "!=",
+                                            "value": "online"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "layout": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5ee7d0d618798",
+                                        "label": "Street Address",
+                                        "name": "street_address",
+                                        "type": "text",
+                                        "instructions": "Full Street address, included unit number if applicable.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5ee7d0f918799",
+                                        "label": "City",
+                                        "name": "city",
+                                        "type": "text",
+                                        "instructions": "City where the event will take place",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5ee7d1161879a",
+                                        "label": "State",
+                                        "name": "state",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "AL": "AL",
+                                            "AK": "AK",
+                                            "AR": "AR",
+                                            "AZ": "AZ",
+                                            "CA": "CA",
+                                            "CO": "CO",
+                                            "CT": "CT",
+                                            "DC": "DC",
+                                            "DE": "DE",
+                                            "FL": "FL",
+                                            "GA": "GA",
+                                            "HI": "HI",
+                                            "IA": "IA",
+                                            "ID": "ID",
+                                            "IL": "IL",
+                                            "IN": "IN",
+                                            "KS": "KS",
+                                            "KY": "KY",
+                                            "LA": "LA",
+                                            "MA": "MA",
+                                            "MD": "MD",
+                                            "ME": "ME",
+                                            "MI": "MI",
+                                            "MN": "MN",
+                                            "MO": "MO",
+                                            "MS": "MS",
+                                            "MT": "MT",
+                                            "NC": "NC",
+                                            "NE": "NE",
+                                            "NH": "NH",
+                                            "NJ": "NJ",
+                                            "NM": "NM",
+                                            "NV": "NV",
+                                            "NY": "NY",
+                                            "ND": "ND",
+                                            "OH": "OH",
+                                            "OK": "OK",
+                                            "OR": "OR",
+                                            "PA": "PA",
+                                            "RI": "RI",
+                                            "SC": "SC",
+                                            "SD": "SD",
+                                            "TN": "TN",
+                                            "TX": "TX",
+                                            "UT": "UT",
+                                            "VT": "VT",
+                                            "VA": "VA",
+                                            "WA": "WA",
+                                            "WI": "WI",
+                                            "WV": "WV",
+                                            "WY": "WY"
+                                        },
+                                        "default_value": false,
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "return_format": "value",
+                                        "ajax": 0,
+                                        "placeholder": ""
+                                    },
+                                    {
+                                        "key": "field_5ee7d1c31879b",
+                                        "label": "Postal Code",
+                                        "name": "postal_code",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "field_5ef9f7ee295fd",
+                                "label": "url",
+                                "name": "url",
+                                "type": "url",
+                                "instructions": "For use with Online or Mixed Event Types",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5ef9f75e295fc",
+                                            "operator": "!=",
+                                            "value": "standard"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5ef9f864295fe",
+                        "label": "Event Admission",
+                        "name": "event_admission",
+                        "type": "repeater",
+                        "instructions": "Only use this field if there will be tickets required for the event. If there are tickets required, but they are free, add a ticket price, but set the price to zero.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "collapsed": "field_5ef9f8f5295ff",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add Ticket Price",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ef9f8f5295ff",
+                                "label": "Admission Price",
+                                "name": "admission_price",
+                                "type": "number",
+                                "instructions": "The price for admission. Enter 0 for free tickets.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": 0,
+                                "placeholder": "",
+                                "prepend": "$",
+                                "append": "",
+                                "min": 0,
+                                "max": "",
+                                "step": "0.01"
+                            },
+                            {
+                                "key": "field_5ef9f94d29600",
+                                "label": "Ticket Purchase Url",
+                                "name": "ticket_purchase_url",
+                                "type": "url",
+                                "instructions": "Where tickets can be purchased for this event.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "default_value": "",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5ef9f98329601",
+                                "label": "Ticket Availability",
+                                "name": "ticket_availability",
+                                "type": "select",
+                                "instructions": "Toggle this as necessary",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "choices": {
+                                    "InStock": "In Stock",
+                                    "SoldOut": "Sold Out",
+                                    "PreOrder": "Pre-Order"
+                                },
+                                "default_value": "InStock",
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5ef9fa0e29602",
+                                "label": "On Sale Date",
+                                "name": "on_sale_date",
+                                "type": "date_time_picker",
+                                "instructions": "The Date and Time from which this pricepoint is available.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "show_in_graphql": 1,
+                                "display_format": "F j, Y g:i a",
+                                "return_format": "U",
+                                "first_day": 0
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_5eed0cbe36815",
+                        "label": "Is Canonical",
+                        "name": "is_canonical",
+                        "type": "true_false",
+                        "instructions": "Only Check This Box if you intend the content on the Wordpress site to be the canonical version. Otherwise, if this content is being exported to another site, the external site will be considered canonical.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5ef693b95c158",
+                        "label": "Slug",
+                        "name": "slug",
+                        "type": "text",
+                        "instructions": "The endpoint for the event to be displayed on the author's website.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "events-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_graphql": 1,
+        "graphql_field_name": "events"
+    },
+    {
+        "key": "group_5ee7ced5b9506",
+        "title": "FAQs",
+        "fields": [
+            {
+                "key": "field_5ee7cee20a505",
+                "label": "Frequently Asked Questions",
+                "name": "faqs",
+                "type": "repeater",
+                "instructions": "This should include a mix of informational, marketing, and urgent questions. The right types of questions will not only inform users but increase the SEO value of the site. Remember, people come to search engines to ask questions and find answers. What questions does your site answer? Ask and answer those questions here.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5ee7cefd0a506",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Questions",
+                "sub_fields": [
+                    {
+                        "key": "field_5ef6943d30cbd",
+                        "label": "ID",
+                        "name": "id",
+                        "type": "text",
+                        "instructions": "READ ONLY",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "disabled": 1,
+                        "readonly": 1
+                    },
+                    {
+                        "key": "field_5ee7cefd0a506",
+                        "label": "Question",
+                        "name": "question",
+                        "type": "text",
+                        "instructions": "The full text of the question",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5ee7cf1c0a507",
+                        "label": "Answer",
+                        "name": "answer",
+                        "type": "wysiwyg",
+                        "instructions": "The answer to the provided question",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0
+                    },
+                    {
+                        "key": "field_5eed0d211143f",
+                        "label": "Is Canonical",
+                        "name": "is_canonical",
+                        "type": "true_false",
+                        "instructions": "Only Check This Box if you intend the content on the Wordpress site to be the canonical version. Otherwise, if this content is being exported to another site, the external site will be considered canonical.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5ef6945430cbe",
+                        "label": "Slug",
+                        "name": "slug",
+                        "type": "text",
+                        "instructions": "The endpoint for the event on the author's site",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "faqs-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_graphql": 1,
+        "graphql_field_name": "faq"
+    },
+    {
+        "key": "group_5f36ae96ca20b",
+        "title": "In the News",
+        "fields": [
+            {
+                "key": "field_5f36aea276fc9",
+                "label": "News Mentions",
+                "name": "news_mentions",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "show_in_graphql": 1,
+                "collapsed": "field_5f36aed276fca",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Mention",
+                "sub_fields": [
+                    {
+                        "key": "field_5f36aed276fca",
+                        "label": "Link",
+                        "name": "link",
+                        "type": "url",
+                        "instructions": "The url of the article, video, audio, or other media that mentions your or one of your books",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5f36af3e76fcb",
+                        "label": "Title",
+                        "name": "title",
+                        "type": "text",
+                        "instructions": "The title of the publication or website",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5f36af7276fcc",
+                        "label": "Description",
+                        "name": "description",
+                        "type": "text",
+                        "instructions": "A brief description or quote from the mention.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "show_in_graphql": 1,
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "news-mentions"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_graphql": 1,
+        "graphql_field_name": "InTheNews"
+    },
+    {
+        "key": "group_5eecf79785b2f",
+        "title": "Netlify Settings",
+        "fields": [
+            {
+                "key": "field_5eecf7b99e9cc",
+                "label": "Netlify Hook Url",
+                "name": "netlify_hook_url",
+                "type": "url",
+                "instructions": "***DO NOT UPDATE*** This is used by netlify to update the site based on changes to custom fields",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "netlify-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_graphql": 0,
+        "graphql_field_name": "netlify_settings"
+    }
+]
