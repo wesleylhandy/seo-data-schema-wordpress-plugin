@@ -2,7 +2,7 @@
 /*
 Plugin Name: SEO-friendly Data-Schema with Options Pages
 Description: Worpress Plugin to add SEO-friendly Books, Events, and FAQ data-schema with Options Pages using Advanced Custom Fields Pro, and optimized for connecting via graphql to Static Site Generators.
-Version: 1.4.2
+Version: 1.5.0
 Author: Wesley L. Handy <wesley@wearecreativ.media>
 Author URI: https://www.wesleylhandy.net
 Text Domain: seo_data_schema
@@ -63,12 +63,14 @@ class Seo_data_schema {
         include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/event-options-page.php" );
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/faq-options-page.php" );
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/netlify-settings-options-page.php" );
+		include_once( SEO_DATA_SCHEMA_PATH . "includes/options-pages/news-options-page.php" );
 
 		// INCLUDE ACF DEFINITIONS
         include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-book-definition.php" );
         include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-event-definition.php" );
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-faq-definition.php" );
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-netlify-settings-definition.php" );
+		include_once( SEO_DATA_SCHEMA_PATH . "includes/custom-fields/acf-news-definition.php" );
 
 		// INCLUDE ACF FILTERS
 		include_once( SEO_DATA_SCHEMA_PATH . "includes/filters/unique-ids.php" );
